@@ -32,7 +32,7 @@ nav{
 nav ul li{
     display: inline-block;
     list-style: none;
-    margin: 20px 20px;
+    margin: 30px 20px;
 }
 
 nav ul li a{
@@ -74,7 +74,7 @@ nav ul li a:hover::after{
 /* ----------about------------ */
 #about{
     padding: 80px 0;
-    color: #ff0000;
+    color: #616161;
 }
 .row{
     display: flex;
@@ -91,4 +91,28 @@ nav ul li a:hover::after{
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+.tab-links {
+    display: inline-block;
+    margin-left: 15px;
+    cursor: pointer;
+    font-weight: 600;
+    color: #333; /* adjust for your theme */
+    transition: color 0.3s;
+}
+
+.tab-links:hover {
+    color: #007bff; /* or your accent color */
+}
+
+.about-col-2 {
+    flex-basis: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-titles {
+    text-align: center; /* or right if you prefer */
+    margin-top: 0;
 }

@@ -113,6 +113,6 @@ nav ul li a:hover::after{
 }
 
 .tab-titles {
-    text-align: center; /* or right if you prefer */
+    text-align:left; /* or right if you prefer */
     margin-top: 0;
 }

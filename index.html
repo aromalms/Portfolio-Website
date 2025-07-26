@@ -6,6 +6,7 @@
     <title>Aromal M S</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/200b3bcac3.js" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="header">
@@ -27,13 +28,12 @@
     </div>
 </div>
 <!-- ---------------about----------------- -->
-<!-- ---------------about----------------- -->
 <div id="about">
     <div class="container">
         <div class="row">
             <div class="about-col-1">
                 <h1 class="sub-title">About Me</h1>
-                <p> I’m a developer passionate about building meaningful apps, especially with Flutter for mobile. I’ve worked
+                <p class="para"> I’m a developer passionate about building meaningful apps, especially with Flutter for mobile. I’ve worked
             on creating user-friendly mobile apps and am currently expanding my skills in full-stack development. While
             still growing in this area, I’ve gained hands-on experience with both frontend and backend tasks. I’m always
             learning and improving, tackling problem-solving challenges on platforms like Leetcode and HackerRank. I enjoy
@@ -42,13 +42,54 @@
             </div>
             <div class="about-col-2">
                 <div class="tab-titles">
-                    <p class="tab-links">Skills</p>
-                    <p class="tab-links">Experience</p>
-                    <p class="tab-links">Education</p>
+                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                    <p class="tab-links" onclick="openTab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>HTML5, CSS3, JavaScript, Python Django</li>
+                        <li><span>App Development</span><br>Building Android/iOS apps (Flutter)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Full Stack Development Intern</span><br>NextGenPro Innovations, Kochi - July 2024</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>B.Tech in Computer Science and Engineering</span><br>St.Joseph's College of Engineering and Technology, Palai</li>
+                    </ul>
                 </div>
             </div>
         </div>
     </div>
 </div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut corrupti, quasi magnam cum accusamus minus quisquam, adipisci beatae voluptate iure maiores impedit consequatur temporibus, velit esse earum quibusdam excepturi repellat.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-flutter"></i>
+                <h2>App Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut corrupti, quasi magnam cum accusamus minus quisquam, adipisci beatae voluptate iure maiores impedit consequatur temporibus, velit esse earum quibusdam excepturi repellat.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <!-- <div>
+                <h2>Web Development</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut corrupti, quasi magnam cum accusamus minus quisquam, adipisci beatae voluptate iure maiores impedit consequatur temporibus, velit esse earum quibusdam excepturi repellat.</p>
+                <a href="#">Learn More</a>
+            </div> -->
+        </div>
+    </div>
+</div>
+<script src="main.js"></script>
 </body>
 </html>

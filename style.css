@@ -335,10 +335,10 @@ nav ul li a:hover::after{
 }
 /* contact */
 .contact-left{
-    flex-basis: 35%;   
+    flex-basis: 45%;   
 }
 .contact-right{
-    flex-basis: 60%;   
+    flex-basis: 55%;   
 }
 .contact-left p{
     margin-top: 30px;  
@@ -387,4 +387,58 @@ form .btn2{
     font-size: 18px;
     margin-top: 20px;
     cursor: pointer;   
+}
+.copright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* css for small screen */
+nav .fa-solid{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    #header{
+        background-image: url(images/);
+    }
+    .header-text{
+        margin-top: 100%;
+        font-size: 16px;
+    }
+    .header-text h1{
+        font-size: 30px;
+    }
+    nav .fa-solid{
+    display: block;
+    font-size: 25px;
+    }
+    nav ul{
+        background: #ddff00;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition:right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    nav ul .fa-solid{
+        color: black;
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    nav ul li a{
+        color: #000000;
+    }
 }

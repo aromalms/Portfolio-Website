@@ -6,3 +6,11 @@ function openTab(tabName) {
     document.querySelector('.tab-links[onclick="openTab(\'' + tabName + '\')"]').classList.add('active-link');
     document.getElementById(tabName).classList.add('active-tab');
 }
+
+var sidemeu=document.getElementById("sidemenu");
+function openmenu(){
+    sidemeu.style.right="0";
+}
+function closemenu(){
+    sidemeu.style.right="-200px";
+}

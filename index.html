@@ -16,16 +16,16 @@
             <ul id="sidemenu">
                 <li><a href="#header">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#achievements">Achievements</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <i id="close-icon" class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
             </ul>
             <i id="bar-icon" class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
-            <p>Developer</p>
-            <h1>Hi, I'm <span>Aromal</span></h1>
+            <p>Hello Everyone..</p>
+            <h1>I'm <span>Aromal M S</span></h1>
         </div>
     </div>
 </div>
@@ -42,33 +42,49 @@
             collaborating in teams to build efficient solutions and am excited to keep growing as a developer while working
             on projects that make a real impact.</p>
             </div>
-            <div class="about-col-2">
-                <div class="tab-titles">
-                    <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
-                    <p class="tab-links" onclick="openTab('experience')">Experience</p>
-                    <p class="tab-links" onclick="openTab('education')">Education</p>
-                </div>
-                <div class="tab-contents active-tab" id="skills">
+        </div>
+    </div>
+</div>
+
+<div id="details">
+    <div class="container">
+        <div class="details-list">
+            <div>
+                <i class="fa-solid fa-square-check"></i>
+                <h2>Skills</h2>
+                <ul>
+                    <li>Web Development</li>
+                    <li>App Development</li>
+                    <li>Video Editing </li>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-school"></i>
+                <h2>Education</h2>
+                <ul>
+                    <li>Bachelor of Technology in Computer Science (Pursuing)
+                        <ul>
+                            <li>St. Joseph's College of Engineering and Technology, Palai</li>
+                        </ul>
+                    </li>
+                    <li>Higher Secondary Education</li>
                     <ul>
-                        <li><span>Web Development</span><br>HTML5, CSS3, JavaScript, Python Django</li>
-                        <li><span>App Development</span><br>Building Android/iOS apps (Flutter)</li>
+                        <li>St.Paul's HSS Valiakumaramangalam</li>
+                        <li>Percentage : 96.42 </li>
                     </ul>
-                </div>
-                <div class="tab-contents" id="experience">
-                    <ul>
-                        <li><span>Full Stack Development Intern</span><br>NextGenPro Innovations, Kochi - July 2024</li>
-                    </ul>
-                </div>
-                <div class="tab-contents" id="education">
-                    <ul>
-                        <li><span>B.Tech in Computer Science and Engineering</span><br>St.Joseph's College of Engineering and Technology, Palai</li>
-                    </ul>
-                </div>
+                </ul>
+            </div>
+            <div>
+                <i class="fa-solid fa-shield"></i>
+                <h2>Experience</h2>
+                <p>Full Stack Development Intern</p>
+                <li>NextGenPro Innovations, Kochi</li>
             </div>
         </div>
     </div>
 </div>
-<div id="services">
+<!-- services -->
+<!-- <div id="services">
     <div class="container">
         <h1 class="sub-title">My Services</h1>
         <div class="services-list">
@@ -84,14 +100,14 @@
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut corrupti, quasi magnam cum accusamus minus quisquam, adipisci beatae voluptate iure maiores impedit consequatur temporibus, velit esse earum quibusdam excepturi repellat.</p>
                 <a href="#">Learn More</a>
             </div>
-            <!-- <div>
+            <div>
                 <h2>Web Development</h2>
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut corrupti, quasi magnam cum accusamus minus quisquam, adipisci beatae voluptate iure maiores impedit consequatur temporibus, velit esse earum quibusdam excepturi repellat.</p>
                 <a href="#">Learn More</a>
             </div> -->
         </div>
     </div>
-</div>
+</div> 
 <!-- portfolio -->
 <div id="portfolio">
     <div class="container">
@@ -99,28 +115,32 @@
         <div class="work-list">
             <div class="work">
                 <img src="images/neighbourly.png" alt="">
-                <div class="layer">
+                <div class="work-card">
                     <h3>Neighbourly</h3>
-                    <p> A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
-                    needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.</p>
+                    <p>A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
+                    needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.
+                    <br><br><b>Technology : </b>Flutter, Firebase, Gemini 
+                </p>
                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="images/firstcall.png" alt="">
-                <div class="layer">
-                    <h3>Neighbourly</h3>
-                    <p> A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
-                    needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.</p>
+                <div class="work-card">
+                    <h3>First Call</h3>
+                    <p>The Emergency Service App centralizes essential contacts like hospitals, ambulance, police, fire, and helplines, offering nearest options via geolocation with tap-to-call access.
+                <br><br><b>Technology : </b>Flutter, Supabase
+                </p>    
                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
-                <img src="images/neighbourly.png" alt="">
-                    <div class="layer">
-                    <h3>Neighbourly</h3>
-                    <p> A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
-                    needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.</p>
+                <img src="images/fuel.png" alt="">
+                    <div class="work-card">
+                    <h3>Smart fuel-type detection</h3>
+                    <p>The primary issue is the accidental fueling of the wrong fuel type. This system aims to prevent such incidents by utilizing NFC technology, ensuring that the fuel pump shuts off in the event of a fuel type mismatch between the vehicle and the fuel pumping machine.
+                    <br><br>
+                <b>Technology:</b> NFC, Arduino, C++, Sensors, Relay Module                  </p>
                     <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
@@ -128,28 +148,62 @@
         <a href="#" class="btn">See more</a>
     </div>
 </div>
+<!-- achievements -->
+ <div id="achievements">
+    <div class="container">
+        <div class="sub-title">Achievements</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/ust.jpg" alt="">
+                <div class="work-card">
+                    <h3>UST SIGHT 2.0 Finalist</h3>
+                    <p>
+                        Selected as one of the top 14 finalist teams out of 1000+ entries from 300+ colleges in the UST SIGHT 2.0 – a national-level showcase of sustainable tech innovations aimed at societal impact.
+                    </p></div>
+            </div>
+            <div class="work">
+                <img src="images/ncc.jpg" alt="">
+                <div class="work-card">
+                    <h3>NCC B Certificate Holder</h3>
+                    <p>Successfully awarded the NCC B Certificate, demonstrating discipline, leadership, and commitment through completion of rigorous training under the National Cadet Corps.</p>                </div>
+            </div>
+            <div class="work">
+                <img src="images/sih.JPG" alt="">
+                <div class="work-card">
+                    <h3>Smart India Hackathon Prelims</h3>
+                    <p>Our team ALOHA secured a Top 10 position in the Smart India Hackathon Internal Round at SJCET Palai with our project “Intelligent Fuel Type Detection and Prevention System for Misfuelling.</p>                </div>
+            </div>
+            <div class="work">
+                <img src="images/typing.png" alt="">
+                <div class="work-card">
+                    <h3>State-Level IT Fair Finalist</h3>
+                    <p> Selected to represent Kottayam district as one of the two candidates in Malayalam typing at the State IT Fair, organized by the General Education Department of Kerala, held at Thrissur</p>                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- coordination -->
-<div id="portfolio">
+<!-- <div id="portfolio">
     <div class="container">
         <div class="sub-title">My Footprint</div>
         <div class="work-list">
             <div class="work">
                 <img src="images/carestack.jpg" alt="">
-                <div class="layer">
+                <div class="work-card">
                     <h3>INDUSTRIAL VISIT 2024</h3>
                     <p> A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
                     needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.</p>                </div>
             </div>
             <div class="work">
                 <img src="images/farewell.jpg" alt="">
-                <div class="layer">
+                <div class="work-card">
                     <h3>FAREWELL FIESTA</h3>
                     <p> A cross-platform mobile app that connects community volunteers with elderly or homebound individuals
                     needing assistance with tasks like grocery shopping, medicine pickup, or hospital visits.</p>                </div>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 <!-- contact -->
 <div id="contact">
     <div class="container">

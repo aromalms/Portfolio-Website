@@ -13,15 +13,15 @@ const barIcon = document.getElementById("bar-icon");
 const closeIcon = document.getElementById("close-icon");
 
 function openmenu() {
-    sidemenu.style.right = "0";
-    barIcon.classList.add("hide");
-    closeIcon.style.display = "block";
+    sidemenu.classList.add("active");
+    barIcon.style.display = "none";
+    closeIcon.style.display = "block"; // Show close icon
 }
 
 function closemenu() {
-    sidemenu.style.right = "-250px";
-    barIcon.classList.remove("hide");
-    closeIcon.style.display = "none";
+    sidemenu.classList.remove("active");
+    barIcon.style.display = "block";
+    closeIcon.style.display = "none"; // Hide close icon
 }
 
 // Hide close icon by default on load

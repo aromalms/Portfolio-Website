@@ -15,29 +15,29 @@ const closeIcon = document.getElementById("close-icon");
 function openmenu() {
     sidemenu.classList.add("active");
     barIcon.style.display = "none";
-    closeIcon.style.display = "block"; // Show close icon
+    closeIcon.style.display = "block";
 }
 
 function closemenu() {
     sidemenu.classList.remove("active");
     barIcon.style.display = "block";
-    closeIcon.style.display = "none"; // Hide close icon
+    closeIcon.style.display = "none";
 }
 
-// Hide close icon by default on load
-closeIcon.style.display = "none";
-barIcon.classList.remove("hide");
-
-// Update resize handler as well
-window.addEventListener('resize', function() {
-    if(window.innerWidth > 600){
-        barIcon.classList.add("hide");
-        closeIcon.style.display = "none";
-        sidemenu.style.right = "0";
+// Initial state on load
+function setMenuIcons() {
+    if (window.innerWidth <= 600) {
+        barIcon.style.display = sidemenu.classList.contains("active") ? "none" : "block";
+        closeIcon.style.display = sidemenu.classList.contains("active") ? "block" : "none";
     } else {
-        barIcon.classList.remove("hide");
+        barIcon.style.display = "none";
         closeIcon.style.display = "none";
-        sidemenu.style.right = "-250px";
+        sidemenu.classList.remove("active");
     }
-});
+}
+
+// Run on load
+window.addEventListener("DOMContentLoaded", setMenuIcons);
+// Run on resize
+window.addEventListener("resize", setMenuIcons);
 

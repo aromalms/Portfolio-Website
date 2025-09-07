@@ -16,10 +16,8 @@ body {
 }
 
 #header {
-    /* width: 100%; */
-     height: 100vh; 
-    /* background: url(images/background2.png) center/cover no-repeat; */
-    padding-top: 80px; /* adjust based on nav height */
+    padding-top: 80px;
+    padding-bottom: 300px; /* Default for large screens */
 } 
 
 .container {
@@ -506,6 +504,30 @@ form .btn2 {
     color: #fff;
 }
 
+/* Profile Image */
+.header-profile-img {
+    display: block;
+    margin: -80px auto 24px auto; /* Lift image upwards and center */
+    width: 250px;
+    height: 250px;
+}
+
+@media (max-width: 900px) {
+    .header-profile-img {
+        width: 160px;
+        height: 160px;
+        margin: -32px auto 18px auto; /* Adjust lift and spacing */
+    }
+}
+
+@media (max-width: 600px) {
+    .header-profile-img {
+        width: 120px;
+        height: 120px;
+        margin: -16px auto 12px auto; /* Further adjust for small screens */
+    }
+}
+
 /* Responsive Styles */
 @media (max-width: 1200px) {
     .container {
@@ -514,6 +536,9 @@ form .btn2 {
     }
     .about-col-2 {
         padding-left: 60px;
+    }
+    #header {
+        padding-bottom: 200px;
     }
 }
 
@@ -526,6 +551,9 @@ form .btn2 {
     .header-text h1 {
         font-size: 44px;
         text-align: center;
+    }
+    #header {
+        padding-bottom: 120px;
     }
 }
 
